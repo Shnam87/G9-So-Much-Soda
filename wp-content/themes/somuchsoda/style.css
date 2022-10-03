@@ -3,6 +3,71 @@ Theme Name: So Much Soda
 Author: Grupp 9 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap');
+
 * {
-  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+.start-cta-block {
+  background-color: #BFC7C7;
+  color: #353434;
+  text-align: center;
+  /* height: 398px; */
+  height: 25rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.start-cta-h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 3%;
+  padding: 4rem 0 1rem 0;
+}
+
+.start-cta-p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 2rem 0 4rem 0;
+}
+
+/* a.wp-block-button__link, */
+a.start-cta-btn {
+  /* Button 'block' */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #617C7C;
+  width: 161px;
+  height: 37px;
+  border-radius: none;
+  border: none;
+  
+  /* Button text */
+  font-family: 'Montserrat';
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.06em;
+}
+
+a:visited {
+  color: #FFFFFF;
 }

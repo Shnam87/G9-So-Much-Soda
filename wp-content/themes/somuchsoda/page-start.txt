@@ -1,0 +1,16 @@
+
+<?php get_header(); ?> 
+this is page-start
+
+<div class="start-cta-block">
+    <h1 class="start-cta-h1"><?php the_field('heading'); ?></h1>
+    <p class="start-cta-p"><?php the_field('content'); ?></p>
+    <div class="start-cta-btn">
+        <?php the_content(); ?>
+    </div>
+</div>
+<?php  
+ wp_list_categories( array('taxonomy' => 'product_cat', 'title_li'  => '') );
+?>
+
+<?php get_footer();?> 

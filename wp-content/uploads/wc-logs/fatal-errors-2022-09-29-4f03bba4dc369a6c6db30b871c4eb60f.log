@@ -1,0 +1,16 @@
+2022-09-29T11:17:55+00:00 CRITICAL Uncaught Error: Call to undefined function the_heading() in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page-start.php:6
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page-start.php on line 6
+
+2022-09-29T11:17:56+00:00 CRITICAL Uncaught Error: Call to undefined function the_heading() in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page-start.php:6
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page-start.php on line 6
+
