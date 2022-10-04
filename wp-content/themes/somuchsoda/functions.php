@@ -28,7 +28,68 @@ function my_acf_blocks_init() {
             'keywords'          => array('cta'),
         ));
     }
+    // if( function_exists('acf_register_block_type') ) {
+    //     acf_register_block_type(array(
+    //         'name'              => 'featured product',
+    //         'title'             => __('Featured Product'),
+    //         'description'       => __('A custom featured product block.'),
+    //         'render_template'   => 'template-parts/blocks/featured-product.php',
+    //         'category'          => 'formatting',
+    //         'icon'              => 'slides',
+    //         'keywords'          => array('featured product'),
+    //     ));
+    // }
 }
+
+//Override styles to create own class
+add_filter('woocommerce_post_class', 'featured_product_class');
+
+function featured_product_class($classes) {
+    $classes[] = 'featured-prod-container';
+    return $classes;
+}
+
+
+
+                    // function filter_woocommerce_post_class( $classes, $product ) {
+                    //     global $woocommerce_loop;
+                        
+                    //     if (!is_product() ) return $classes;
+                        
+                    //     // The related products section, so return
+                    //     if ( $woocommerce_loop['name'] == 'related' ) return $classes;
+                        
+                    //     // Add new class
+                    //     $classes[] = 'featured-prod-container';
+                        
+                    //     return $classes;
+                    // }
+                    // add_filter( 'woocommerce_post_class', 'filter_woocommerce_post_class', 10, 2 );
+
+
+
+// eventuellt bättre?
+                    // function filter_woocommerce_post_class( $classes, $product ) {
+                    //     global $woocommerce_loop;
+                        
+                    //     if ( is_product()) return $classes;
+                        
+                    //     // The related products section, so return
+                    //     if ( $woocommerce_loop['name'] == 'related' ) return $classes;
+                        
+                    //     // Add new class
+                    //     $classes[] = 'featured-prod-container';
+                        
+                    //     return $classes;
+                    // }
+                    // add_filter( 'woocommerce_post_class', 'filter_woocommerce_post_class', 10, 2 );
+
+
+
+
+
+
+
 
 // Register post type for 'Stores'
 function create_posttype(){
@@ -49,16 +110,16 @@ function create_posttype(){
 add_action('init', 'create_posttype');
 
 // CATEGORIES
-$args = array(
-    'taxonomy' => 'product_cat',
-    'orderby' => 'name', 
-    'order' => 'DESC',
-    'hide_empty' => false
-);
-foreach( get_categories($args) as $category):
-    // Display category data here
-    the_title();
-endforeach;
+// $args = array(
+//     'taxonomy' => 'product_cat',
+//     'orderby' => 'name', 
+//     'order' => 'DESC',
+//     'hide_empty' => false
+// );
+// foreach( get_categories($args) as $category):
+//     // Display category data here
+//     the_title();
+// endforeach;
 
 
 

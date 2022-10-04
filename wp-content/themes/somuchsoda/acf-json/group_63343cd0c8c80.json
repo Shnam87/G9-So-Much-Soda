@@ -41,10 +41,10 @@
             "new_lines": ""
         },
         {
-            "key": "field_633ab54ab6446",
-            "label": "Button Name",
-            "name": "button_name",
-            "type": "text",
+            "key": "field_633bf030062b8",
+            "label": "Link",
+            "name": "button_link",
+            "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -53,38 +53,15 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_633ac71de2692",
-            "label": "Include Button",
-            "name": "include_button",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 1,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
+            "return_format": "array"
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "block",
                 "operator": "==",
-                "value": "page"
+                "value": "acf\/cta"
             }
         ]
     ],
@@ -97,5 +74,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664798396
+    "modified": 1664872512
 }

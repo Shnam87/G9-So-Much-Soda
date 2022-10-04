@@ -10,3 +10,65 @@
 
 2022-10-03T11:46:41+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 14
 
+2022-10-03T12:24:16+00:00 CRITICAL syntax error, unexpected 'limit' (T_STRING), expecting ']' in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 9
+
+2022-10-03T12:31:33+00:00 CRITICAL Uncaught Error: Call to undefined function featured_products() in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 8
+
+2022-10-03T12:31:44+00:00 CRITICAL Uncaught Error: Call to undefined function featured_products() in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 8
+
+2022-10-03T12:34:41+00:00 CRITICAL Uncaught Error: Call to undefined function featured_products() in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 10
+
+2022-10-03T12:35:25+00:00 CRITICAL Uncaught Error: Call to undefined function featured_products() in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 10
+
+2022-10-03T12:35:26+00:00 CRITICAL Uncaught Error: Call to undefined function featured_products() in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 10
+
+2022-10-03T12:36:02+00:00 CRITICAL Uncaught Error: Call to undefined function featured_products() in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 10
+
+2022-10-03T12:42:03+00:00 CRITICAL Cannot redeclare my_acf_blocks_init() (previously declared in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php:20) in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 32
+
+2022-10-03T12:42:32+00:00 CRITICAL Cannot redeclare my_acf_blocks_init() (previously declared in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php:20) in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 32
+
+2022-10-03T12:42:33+00:00 CRITICAL Cannot redeclare my_acf_blocks_init() (previously declared in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php:20) in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 32
+
+2022-10-03T12:43:04+00:00 CRITICAL Cannot redeclare my_acf_blocks_init() (previously declared in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php:20) in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 32
+
+2022-10-03T13:17:06+00:00 CRITICAL syntax error, unexpected 'styles' (T_STRING) in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 44
+
+2022-10-03T13:17:10+00:00 CRITICAL syntax error, unexpected 'styles' (T_STRING) in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 44
+
