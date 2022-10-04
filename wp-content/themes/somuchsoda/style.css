@@ -3,6 +3,474 @@ Theme Name: So Much Soda
 Author: Grupp 9 
 */
 
-* {
-  background-color: yellow;
+body {
+  font-family: 'Montserrat';
+  padding: 0;
+  max-width: 1440px;
+  border: 2px solid burlywood;
+  margin: auto;
 }
+
+
+
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 8px;
+ 
+}
+
+
+.menu-item:hover .sub-menu {
+  display: block;
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+.page-content-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 134px;
+}
+
+
+.page-content-div {
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 69px;
+
+
+}
+
+.page-content-div img {
+  
+
+  margin-bottom: 70px;
+}
+
+.wp-block-image .aligncenter{
+
+  width: 944px;
+  height: 500px;
+}
+
+.page-content-div p {
+  
+  max-width: 775px;
+
+}
+
+/* .page-content{
+  padding: 36px 140px 20px 140px;
+} */
+
+
+
+
+/*-----HEADER-----*/
+
+#wrapper{
+  position: relative;
+}
+
+#header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 1440px ;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: transparent;
+  align-items: center; 
+  z-index: 1;
+  /* border: 2px solid greenyellow; */
+}
+
+.page-content{
+  padding-top: 134px;
+}
+
+
+.page-description{
+  max-width: 821px;
+  margin: auto;
+}
+
+header a{
+  font-size: 1.17em;
+  font-weight: 500;
+  color: #353434;
+
+} 
+
+
+
+ 
+
+.svg-div{
+  height: auto;
+  width: 20px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.page-logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  
+}
+
+.icons-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.icons-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+.material-symbols-outlined{
+  font-size: 37px;
+}
+
+/* Navigation Menu */
+.main-navigation {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+
+.main-navigation li {
+  list-style: none;
+  list-style-type: none;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.main-navigation ul.nav-menu {
+  
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+
+  display: none;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-navigation div.nav-menu > ul {
+  display: none;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-navigation ul.nav-menu.toggled-on {
+  display: inline-block;
+  border: none;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.menu-menu-1-container{
+  z-index: 1;
+}
+
+.menu-toggle {
+  display: inline-block;
+  border: none;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+
+  margin: 0;
+}
+
+
+
+@media screen and (min-width: 850px) {
+
+
+
+  .icons-nav{
+   
+    gap: 70px;
+  }
+
+
+
+  .main-navigation {
+    justify-content: center;
+   
+    align-items: center;
+  }
+
+  .main-navigation ul.nav-menu,
+  .main-navigation div.nav-menu > ul {
+      display: inline-block !important;
+  }
+  
+  .main-navigation li a,
+  .main-navigation li {
+      display: inline-block;
+      text-decoration: none;
+  }
+ 
+ 
+  .main-navigation li {
+      margin: 0 20px 0 0;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+  }
+  
+  .main-navigation li ul {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 100%;
+      z-index: 1;
+      overflow: hidden;
+  }
+ 
+  .menu-toggle {
+      display: none;
+  }
+   
+
+  .main-navigation ul.nav-menu {
+    position: relative;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: none;
+    z-index: 1;
+  }
+
+
+
+  } 
+
+
+
+
+
+  .woocommerce button.button.alt{
+    
+    background-color: #617C7C;
+    color: #fff;
+    width: 161px;
+    height: 37px;
+    border-radius: 0;
+  }
+
+  .minus, .plus{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 200;
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    border: none;
+    background: #BFC7C7;
+  }
+  .woocommerce button:hover{
+    
+    background-color: #617C7C;
+    
+  }
+
+  .woocommerce .quantity .qty{
+    border: none;
+    width: 1.631em;
+    font-size: 24px;
+    font-weight: 600;
+
+  }
+
+
+  .variations tr{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .woocommerce div.product form.cart .variations select {
+    max-width: 100%;
+    min-width: 250px;
+    height: 45px;
+    display: inline-block;
+    margin-right: 1em;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.product_category_title{
+  font-size: 16px;
+}
+
+
+
+
+  .woocommerce div.product p.price, .woocommerce div.product span.price{
+    color: #617C7C;
+    font-size: 16px;
+  }
+
+
+  .woocommerce-variation-add-to-cart{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+  background: #C4C4C4;
+  font-size: 10px;
+  z-index: 2;
+  border-radius: 0;
+  border-bottom-color: #fff;
+  padding: 0px 2em;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+
+  
+  padding: 0px 0 0 0em;
+}
+
+
+
+
+
+
+
+.page-img-top-container{
+  position: relative;
+  width: 100%;
+  height: 421px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+
+
+.page-img-top-container img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+}
+
+
+
+.term-description{
+  text-align: left; 
+}
+.page-title{
+  text-align: center;
+}
+
+
+.woocommerce-products-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 436px;
+  justify-content: center;
+  background-color: #BFC7C7;
+
+}
+
+
+.woocommerce-products-header-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 436px;
+  justify-content: center;
+  max-width: 821px;
+
+
+}
+
+.woocommerce .products ul, .woocommerce ul.products {
+  margin: 0 0 1em;
+  padding: 0;
+  list-style: none outside;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+  /* float: left; */
+  /* margin: 0 3.8% 2.992em 0; */
+  padding: 0;
+  position: relative;
+  width: 22.05%;
+  margin-left: 0;
+}
+
+

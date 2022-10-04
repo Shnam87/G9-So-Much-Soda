@@ -1,0 +1,4 @@
+2022-09-29T09:33:14+00:00 CRITICAL syntax error, unexpected ''/">Welcome '' (T_CONSTANT_ENCAPSED_STRING) in C:\wamp64\www\G9-So-Much-Soda\wp-content\themes\somuchsoda\functions.php on line 30
+
+2022-09-29T10:00:28+00:00 CRITICAL syntax error, unexpected '<' in C:\wamp64\www\G9-So-Much-Soda\wp-content\themes\somuchsoda\header.php on line 27
+
