@@ -16,13 +16,102 @@ body {
 }
 
 /*==============================================*/
-/* CTA Block */
+/* Fonts / Texts */
+/*==============================================*/
+/* Headings (larger) */
+.start-cta-h1, 
+.text-image-h1,
+.feat-prod-h1,
+.prod-cat-h1,
+.stores-page-title  {
+  font-family: 'Libre Baskerville', serif;
+  color: #353434;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+}
+
+/* Headings (smaller) */
+.prod-cat-item-h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #353434;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+}
+
+/* Subheadings */
+.start-cta-p,
+.feat-prod-p,
+.feat-prod-p-small,
+.prod-cat-text,
+.prod-cat-item-p,
+.text-image-p,
+.text-image-p-small,
+.stores-page-h1,
+.stores-page-p {
+  font-family: 'Montserrat', sans-serif;
+  color: #353434;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* Buttons / Links */
+.start-cta-btn, 
+.text-image-btn,
+.featured-prod-btn,
+a.prod-cat-item-link {
+  /* Button text */
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.06em;
+}
+
+/* Button / Link (visited) */ 
+a:visited {
+  color: #FFFFFF;
+}
+
+a.prod-cat-item-link:visited {
+color: #617C7C;
+}
+
+/*==============================================*/
+/* Buttons / Links (blocks) */
+/*==============================================*/
+.start-cta-btn, 
+.text-image-btn,
+.featured-prod-btn {
+  /* Button 'block' */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #617C7C;
+  width: 161px;
+  height: 37px;
+  border-radius: none;
+  border: none;
+  text-align: center;
+}
+
+/*==============================================*/
+/* 'Start': CTA Block */
 /*==============================================*/
 .start-cta-block {
   background-color: #BFC7C7;
-  color: #353434;
   text-align: center;
-  /* height: 398px; */
   height: 25rem;
   align-items: center;
   display: flex;
@@ -39,104 +128,114 @@ body {
 }
 
 .start-cta-h1 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 3%;
+  text-align: center;
   padding: 1rem 0 1rem 0;
 }
 
 .start-cta-p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 25px;
   padding: 2rem 0 3rem 0;
   text-align: left;
 }
 
-.start-cta-btn, .text-image-btn {
-  /* Button 'block' */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #617C7C;
-  width: 161px;
-  height: 37px;
-  border-radius: none;
-  border: none;
-  
-  /* Button text */
-  font-family: 'Montserrat';
-  text-decoration: none;
-  text-align: center;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 25px;
-  letter-spacing: 0.06em;
-}
-
-a:visited {
-  color: #FFFFFF;
-}
-
 /*==============================================*/
-/* Featured Product */
+/* Feautred Product Block */
 /*==============================================*/
-
-.featured-prod-container {
-  border: 2px solid green;
-}
-
-.woocommerce.columns-3 {
-  border: 2px solid blue;
+.feat-prod-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 50%;
+  height: 840px;
 }
-/* .featured-prod-container */
-ul.products.columns-3 {
-  border: 2px solid orange;
+
+.feat-prod-img {
+  border: 2px solid blue;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feat-prod-text {
+  padding: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-/* Image */ 
-.attachment-woocommerce_thumbnail {
-  border: 2px solid green;
- 
+.feat-prod-img, 
+.feat-prod-text {
+  flex-basis: 50%;
 }
 
-/* Name (h2) */ 
-.woocommerce-loop-product__title {
-  border: 2px solid purple;
-  font-family: 'Libre Baskerville';
-  color: #353434;
-  font-size: 40px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 50px;
-  letter-spacing: 0.03em;
+.p-small-1 {
+  padding: 0 0 1rem 0;
 }
 
-span.price {
-  border: 2px solid maroon;
+.p-small-2 {
+  color: #617C7C;
+  padding: 1rem 0 4rem 0;
 }
 
-.a.button,
-.product_type_simple, 
-.add_to_cart_button, 
-.ajax_add_to_cart {
-  border: 2px solid brown;
+.feat-prod-p {
+  padding-bottom: 3rem;
 }
 
 /*==============================================*/
-/* Text/Image & Image/Text Block */
+/* 'Start': Product Categories Block */
+/*==============================================*/
+.prod-cat-container {
+  border: 2px solid orange;
+  height: 95rem;
+  background: #BFC7C7;
+
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(22.4rem, 22.9rem);
+  gap: 2rem; */
+}
+
+.prod-cat-content {
+  border: 2px solid magenta;
+}
+
+.prod-cat-list-container {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-auto-rows: minmax(22.4rem, 22.9rem); */
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.prod-cat-list-item {
+  border: 2px solid purple;
+  flex-basis: 33rem;
+  height: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.prod-cat-item {
+  border: 2px solid blue;
+  flex-basis: 50%;
+}
+
+.prod-cat-item-img {
+  border: 2px solid green;
+  width: 480px;
+}
+
+.prod-cat-item-p {
+  padding: 2rem 0;
+}
+
+a.prod-cat-item-link {
+  color: #617C7C;
+  text-decoration: none;
+}
+
+/*==============================================*/
+/* 'Start': Text/Image & Image/Text Block */
 /*==============================================*/
 .text-image-block {
   display: flex;
@@ -169,32 +268,12 @@ span.price {
   overflow: clip;
 }
 
-/* Text Content */
-.text-image-p-small {
-  font-family: 'Montserrat';
-  font-size: 16px;
-  line-height: 25px;
-}
-
-.text-image-h1 {
-  font-family: 'Libre Baskerville';
-  font-size: 40px;
-  line-height: 50px;
-  letter-spacing: 0.03em;
-}
-
-.text-image-p {
-  font-family: 'Montserrat';
-  font-size: 16px;
-  line-height: 25px;
-}
-
 .text-image-btn {
   align-self: left;
 }
 
 /*==============================================*/
-/* Page 'Our Stores' */
+/* 'Our Stores' */
 /*==============================================*/
 .stores-container {
   background: #BFC7C7;
@@ -202,14 +281,7 @@ span.price {
 }
 
 .stores-page-title {
-  font-family: 'Libre Baskerville';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #353434;
   padding-bottom: 3rem;
 }
 
@@ -229,18 +301,5 @@ span.price {
 }
 
 .stores-page-h1 {
-  font-family: 'Montserrat';
-  color: #353434;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 25px;
-}
-
-.stores-page-p {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 25px;
-  color: #353434;
 }

@@ -1,6 +1,6 @@
 {
     "key": "group_633acdc499c9b",
-    "title": "Categories Block",
+    "title": "Categories",
     "fields": [
         {
             "key": "field_633acdc4d333f",
@@ -66,9 +66,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "block",
                 "operator": "==",
-                "value": "post"
+                "value": "acf\/categories"
             }
         ]
     ],
@@ -81,5 +81,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664798380
+    "modified": 1664997004
 }

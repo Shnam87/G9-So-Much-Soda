@@ -75,15 +75,20 @@ function my_acf_blocks_init() {
             'keywords'          => array('store', 'shop', 'location'),
         ));
     }
+    // Category / Taxonomy Block
+    if( function_exists('acf_register_block_type') ) {
+        acf_register_block_type(array(
+            'name'              => 'categories',
+            'title'             => __('Categories'),
+            'description'       => __('A custom category block.'),
+            'render_template'   => 'template-parts/blocks/categories.php',
+            'category'          => 'formatting',
+            'icon'              => 'category',
+            'keywords'          => array('category', 'categories', 'taxonomy', 'taxonomies'),
+        ));
+    }
 }
 
-//Override styles to create own class
-add_filter('woocommerce_post_class', 'featured_product_class');
-
-function featured_product_class($classes) {
-    $classes[] = 'featured-prod-container';
-    return $classes;
-}
 
 // Get product id
 function iconic_get_product_id_by_sku($sku = false){
@@ -104,43 +109,6 @@ function iconic_get_product_id_by_sku($sku = false){
     return null;
 
 }
-
-
-
-                    // function filter_woocommerce_post_class( $classes, $product ) {
-                    //     global $woocommerce_loop;
-                        
-                    //     if (!is_product() ) return $classes;
-                        
-                    //     // The related products section, so return
-                    //     if ( $woocommerce_loop['name'] == 'related' ) return $classes;
-                        
-                    //     // Add new class
-                    //     $classes[] = 'featured-prod-container';
-                        
-                    //     return $classes;
-                    // }
-                    // add_filter( 'woocommerce_post_class', 'filter_woocommerce_post_class', 10, 2 );
-
-
-
-// eventuellt bättre?
-                    // function filter_woocommerce_post_class( $classes, $product ) {
-                    //     global $woocommerce_loop;
-                        
-                    //     if ( is_product()) return $classes;
-                        
-                    //     // The related products section, so return
-                    //     if ( $woocommerce_loop['name'] == 'related' ) return $classes;
-                        
-                    //     // Add new class
-                    //     $classes[] = 'featured-prod-container';
-                        
-                    //     return $classes;
-                    // }
-                    // add_filter( 'woocommerce_post_class', 'filter_woocommerce_post_class', 10, 2 );
-
-
 
 
 
