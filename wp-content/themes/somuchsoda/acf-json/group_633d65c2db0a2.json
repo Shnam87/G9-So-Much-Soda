@@ -1,9 +1,9 @@
 {
-    "key": "group_63343cd0c8c80",
-    "title": "Call To Action",
+    "key": "group_633d65c2db0a2",
+    "title": "Stores",
     "fields": [
         {
-            "key": "field_63343cf57ad34",
+            "key": "field_633d65c3d7411",
             "label": "Heading",
             "name": "heading",
             "type": "text",
@@ -16,16 +16,16 @@
                 "id": ""
             },
             "default_value": "",
+            "maxlength": "",
             "placeholder": "",
             "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "append": ""
         },
         {
-            "key": "field_633ac5b7ec735",
-            "label": "Subheading",
-            "name": "subheading",
-            "type": "textarea",
+            "key": "field_633d65efd7412",
+            "label": "",
+            "name": "",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,15 +36,15 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": "",
             "placeholder": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": ""
         },
         {
-            "key": "field_633bf030062b8",
-            "label": "Link",
-            "name": "button_link",
-            "type": "link",
+            "key": "field_633d6603d7413",
+            "label": "Number of Stores",
+            "name": "number_of_stores",
+            "type": "number",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -53,7 +53,13 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "default_value": "",
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -61,7 +67,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/cta"
+                "value": "acf\/stores"
             }
         ]
     ],
@@ -74,5 +80,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664874168
+    "modified": 1664968314
 }

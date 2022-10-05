@@ -5,7 +5,7 @@
         {
             "key": "field_633becfd504f6",
             "label": "Choose Featured Product",
-            "name": "choose_featured_product",
+            "name": "featured_product",
             "type": "post_object",
             "instructions": "",
             "required": 0,
@@ -25,14 +25,29 @@
             "multiple": 0,
             "allow_null": 0,
             "ui": 1
+        },
+        {
+            "key": "field_633d49fd84e71",
+            "label": "Link",
+            "name": "button_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "block",
                 "operator": "==",
-                "value": "page"
+                "value": "acf\/featured-product"
             }
         ]
     ],
@@ -45,5 +60,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664871866
+    "modified": 1664961051
 }

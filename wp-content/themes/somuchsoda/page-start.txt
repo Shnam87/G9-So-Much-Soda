@@ -14,3 +14,23 @@ this is page-start
 ?>
 
 <?php get_footer();?> 
+
+
+
+text-image.php$image = get_field('image');
+$size = 'full'; // (thumbnail, medium, large, full or custom size)
+if( $image ) {
+    echo wp_get_attachment_image( $image, $size );
+}
+
+
+ <?php if( get_field('image') ): ?>
+            <img class="textimage-image" src="<?php the_field('image'); ?>" />
+        <?php endif; ?>
+
+        <?php 
+        $image = get_field('image');
+        $size = 'large'; // (thumbnail, medium, large, full or custom size)
+        if( $image ) {
+            echo wp_get_attachment_image( $image, $size );
+        } ?>
