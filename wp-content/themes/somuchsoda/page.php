@@ -1,11 +1,24 @@
-<?php get_header(); ?>
+<?php if (is_page('checkout') || is_page('cart')) : ?>
+        
+     
+<?php get_header('black'); ?>
+
+
+<?php else : ?>
+        <?php get_header(); ?>
+<?php endif; ?>
+
+
+
+
+
+
+
 
 
 
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-
 
 
 
