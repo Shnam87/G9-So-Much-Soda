@@ -11,13 +11,6 @@ function somuchsoda_enqueue() {
 }
 add_action('wp_enqueue_scripts', 'somuchsoda_enqueue');
 
-
-//Header nav menu.
-function wpb_custom_new_menu(){
-   register_nav_menu('header-menu', __('Header Menu'));
-}
-add_action('init', 'wpb_custom_new_menu');
-
 wp_enqueue_script( 
   'wpb_togglemenu', 
   get_template_directory_uri() . '/js/navigation.js', 
@@ -138,29 +131,6 @@ function tutsplus_excerpt_in_product_archives() {
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'tutsplus_excerpt_in_product_archives', 40 );
 
-
-
-add_action('acf/init', 'my_acf_init_block_types');
-function my_acf_init_block_types()
-{
-
-    // Check function exists.
-    if (function_exists('acf_register_block_type')) {
-
-        // register hero block.
-        acf_register_block_type(array(
-            'name'              => 'hero',
-            'title'             => __('Hero'),
-            'description'       => __('A custom hero block.'),
-            'render_template'   => 'template-parts/blocks/hero.php',
-            'category'          => 'formatting',
-            'icon'              => 'admin-media',
-            'keywords'          => array('hero'),
-        ));
-      }
-};
-
-
 add_action('woocommerce_before_single_product', 'add_breadcrumb', 20);
 function add_breadcrumb(){
    woocommerce_breadcrumb();
@@ -172,14 +142,7 @@ function add_text(){
      get_template_part( 'template-parts/news' ); 
      get_template_part( 'template-parts/blocks/hero' );  
 };
- 
 
-
-function add_woocommerce_support(){
-   add_theme_support('woocommerce');
- }
- add_action('after_setup_theme', 'add_woocommerce_support');
- 
 
 // Theme support Woo
 function add_woocommerce_support(){
@@ -267,7 +230,6 @@ function my_acf_blocks_init() {
     }
 }
 
-
 // Get product id
 function iconic_get_product_id_by_sku($sku = false){
 
@@ -338,10 +300,17 @@ if (!function_exists('somuchsoda_theme_register_nav_menu')) {
       'primary_menu' => __('Primary Menu', 'text_domain'),
       'right_footer_menu'  => __('Right Footer Menu', 'text_domain'),
       'left_footer_menu'  => __('Left Footer Menu', 'text_domain'),
+      'header-menu' => __('Header Menu'),
     ));
   }
   add_action('after_setup_theme', 'somuchsoda_theme_register_nav_menu', 0);
 }
+
+//Header nav menu.
+// function wpb_custom_new_menu(){
+//     register_nav_menu('header-menu', __('Header Menu'));
+//  }
+//  add_action('init', 'wpb_custom_new_menu');
 
 
 function change_excerpt_length($length)
