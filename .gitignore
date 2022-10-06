@@ -1,6 +1,4 @@
 .vscode
-/wp-admin
-/wp-includes
 blankslate
 
 /wp-config.php
