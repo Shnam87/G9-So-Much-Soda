@@ -23,7 +23,8 @@ body {
 .text-image-h1,
 .feat-prod-h1,
 .prod-cat-h1,
-.stores-page-title  {
+.stores-page-title,
+.prod-cat-h1  {
   font-family: 'Libre Baskerville', serif;
   color: #353434;
   font-style: normal;
@@ -53,7 +54,8 @@ body {
 .text-image-p,
 .text-image-p-small,
 .stores-page-h1,
-.stores-page-p {
+.stores-page-p,
+.prod-cat-text {
   font-family: 'Montserrat', sans-serif;
   color: #353434;
   font-style: normal;
@@ -147,10 +149,10 @@ color: #617C7C;
 }
 
 .feat-prod-img {
-  border: 2px solid blue;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  overflow: clip;
 }
 
 .feat-prod-text {
@@ -183,7 +185,7 @@ color: #617C7C;
 /*==============================================*/
 .prod-cat-container {
   border: 2px solid orange;
-  height: 95rem;
+  /* height: 95rem; */
   background: #BFC7C7;
 
   /* display: grid;
@@ -194,7 +196,15 @@ color: #617C7C;
 
 .prod-cat-content {
   border: 2px solid magenta;
+  padding: 3rem;
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
+
+
 
 .prod-cat-list-container {
   border: 2px solid black;

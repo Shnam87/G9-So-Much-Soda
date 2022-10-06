@@ -1,7 +1,10 @@
 <div class="feat-prod-container">
-    <div class="feat-prod-img">
-        <?php if( get_field('image') ): ?>
-            <img class="feat-prod-img" src="<?php the_field('image'); ?>" />
+    <div class="feat-prod-img acf-img">
+        <?php 
+        $image = get_field('image'); 
+        
+        if ($image) : ?>
+            <?php echo wp_get_attachment_image($image['id'], 'large'); ?>
         <?php endif; ?>
     </div>
     <div class="feat-prod-text">
