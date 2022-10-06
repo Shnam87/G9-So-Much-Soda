@@ -2181,6 +2181,7 @@ function isSlowBuffer (obj) {
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 (function(){
   var crypt = __webpack_require__(/*! crypt */ "./node_modules/crypt/crypt.js"),
       utf8 = (__webpack_require__(/*! charenc */ "./node_modules/charenc/charenc.js").utf8),
@@ -2342,6 +2343,8 @@ function isSlowBuffer (obj) {
 
 })();
 =======
+=======
+>>>>>>> origin/steffanie
 (function(){
   var crypt = __webpack_require__(/*! crypt */ "./node_modules/crypt/crypt.js"),
       utf8 = (__webpack_require__(/*! charenc */ "./node_modules/charenc/charenc.js").utf8),
@@ -2502,7 +2505,10 @@ function isSlowBuffer (obj) {
   };
 
 })();
+<<<<<<< HEAD
 >>>>>>> origin/shnam
+=======
+>>>>>>> origin/steffanie
 
 
 /***/ }),

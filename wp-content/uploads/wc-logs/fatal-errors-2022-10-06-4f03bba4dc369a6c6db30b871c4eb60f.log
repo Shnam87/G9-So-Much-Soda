@@ -1,2 +1,8 @@
 2022-10-06T06:30:12+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 16
 
+2022-10-06T07:48:24+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 6
+
+2022-10-06T07:50:25+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 6
+
+2022-10-06T07:52:26+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/functions.php on line 6
+

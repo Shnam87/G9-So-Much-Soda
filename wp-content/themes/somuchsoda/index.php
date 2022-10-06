@@ -11,7 +11,6 @@
 
 <div>
   <div class="news-sub-title">
-
     <?php
     // Display the content of the static posts Page.
     // This is just an example using setup_postdata().
