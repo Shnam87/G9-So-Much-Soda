@@ -1,7 +1,8 @@
 .vscode
 /wp-admin
 /wp-includes
+blankslate
 
-wp-config.php
+/wp-config.php
 
 !.gitignore

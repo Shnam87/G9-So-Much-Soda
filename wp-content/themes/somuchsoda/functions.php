@@ -1,9 +1,14 @@
-<?php 
+<?php
+add_theme_support('title-tag');
+add_theme_support('post-thumbnails');
+add_theme_support('custom-logo');
+
 
 // Que in scripts 
 add_action('wp_enqueue_scripts', 'somuchsoda_enqueue');
 
-function somuchsoda_enqueue(){
+function somuchsoda_enqueue()
+{
   wp_enqueue_style('style', get_stylesheet_uri());
 }
 
@@ -12,6 +17,10 @@ function add_woocommerce_support(){
     add_theme_support('woocommerce');
 }
 add_action('after_setup_theme', 'add_woocommerce_support');
+
+/* =============================== */
+/* Mimmi */
+/* =============================== */
 
 // ACF block registration 
 add_action('acf/init', 'my_acf_blocks_init');
@@ -112,9 +121,6 @@ function iconic_get_product_id_by_sku($sku = false){
 
 
 
-
-
-
 // Register post type for 'Stores'
 function custom_post_type() {
 	$labels = array(
@@ -151,61 +157,62 @@ add_action( 'init', 'custom_post_type', 0 );
 // Hooking up function to theme setup
 add_action('init', 'create_posttype');
 
-// CATEGORIES
-// $args = array(
-//     'taxonomy' => 'product_cat',
-//     'orderby' => 'name', 
-//     'order' => 'DESC',
-//     'hide_empty' => false
-// );
-// foreach( get_categories($args) as $category):
-//     // Display category data here
-//     the_title();
-// endforeach;
+
+/* =============================== */
+/* Shahram */
+/* =============================== */
+if (!function_exists('somuchsoda_theme_register_nav_menu')) {
+
+  function somuchsoda_theme_register_nav_menu()
+  {
+    register_nav_menus(array(
+      'primary_menu' => __('Primary Menu', 'text_domain'),
+      'right_footer_menu'  => __('Right Footer Menu', 'text_domain'),
+      'left_footer_menu'  => __('Left Footer Menu', 'text_domain'),
+    ));
+  }
+  add_action('after_setup_theme', 'somuchsoda_theme_register_nav_menu', 0);
+}
 
 
+function change_excerpt_length($length)
+{
+  return 15;
+}
+add_filter('excerpt_length', 'change_excerpt_length');
 
-// function get_categories(){
 
-//   $taxonomy     = 'product_cat';
-//   $orderby      = 'name';  
-//   $show_count   = 0;      // 1 for yes, 0 for no
-//   $pad_counts   = 0;      // 1 for yes, 0 for no
-//   $hierarchical = 1;      // 1 for yes, 0 for no  
-//   $title        = '';  
-//   $empty        = 0;
+function new_excerpt_more($more)
+{
+  return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
-//   $args = array(
-//          'taxonomy'     => $taxonomy,
-//          'orderby'      => $orderby,
-//          'show_count'   => $show_count,
-//          'pad_counts'   => $pad_counts,
-//          'hierarchical' => $hierarchical,
-//          'title_li'     => $title,
-//          'hide_empty'   => $empty
-//   );
-//  $all_categories = get_categories( $args );
-//  foreach ($all_categories as $cat) {
-//     if($cat->category_parent == 0) {
-//         $category_id = $cat->term_id;       
-//         echo '<br /><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>';
 
-//         $args2 = array(
-//                 'taxonomy'     => $taxonomy,
-//                 'child_of'     => 0,
-//                 'parent'       => $category_id,
-//                 'orderby'      => $orderby,
-//                 'show_count'   => $show_count,
-//                 'pad_counts'   => $pad_counts,
-//                 'hierarchical' => $hierarchical,
-//                 'title_li'     => $title,
-//                 'hide_empty'   => $empty
-//         );
-//         $sub_cats = get_categories( $args2 );
-//         if($sub_cats) {
-//             foreach($sub_cats as $sub_category) {
-//                 echo  $sub_category->name ;
-//             }   
-//         }
-//     }       
-// }
+/* welcome-widgets-menus */
+
+add_action('acf/init', 'my_acf_init_block_types');
+
+function my_acf_init_block_types()
+{
+
+  // Check function exists.
+  if (function_exists('acf_register_block_type')) {
+
+    // register a testimonial block.
+    acf_register_block_type(array(
+      'name'              => 'about',
+      'title'             => __('About us'),
+      'description'       => __('About us block.'),
+      'render_template'   => 'template-parts/blocks/about-us.php',
+      'category'          => 'formatting',
+      'icon'              => 'welcome-widgets-menus',
+      'keywords'          => array('about us'),
+    ));
+  }
+}
+
+if (function_exists('acf_add_options_page')) {
+
+  acf_add_options_page();
+}

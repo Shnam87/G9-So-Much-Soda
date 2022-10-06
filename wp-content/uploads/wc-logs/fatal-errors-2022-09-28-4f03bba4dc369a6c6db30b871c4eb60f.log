@@ -1,0 +1,36 @@
+2022-09-28T18:23:43+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "devsneakers_theme_register_nav_menu" not found or invalid function name in C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#1 C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\MAMP\htdocs\G9-So-Much-Soda\wp-settings.php(576): do_action('after_setup_the...')
+#3 C:\MAMP\htdocs\G9-So-Much-Soda\wp-config.php(96): require_once('C:\\MAMP\\htdocs\\...')
+#4 C:\MAMP\htdocs\G9-So-Much-Soda\wp-load.php(50): require_once('C:\\MAMP\\htdocs\\...')
+#5 C:\MAMP\htdocs\G9-So-Much-Soda\wp-admin\admin.php(34): require_once('C:\\MAMP\\htdocs\\...')
+#6 C:\MAMP\htdocs\G9-So-Much-Soda\wp-admin\index.php(10): require_once('C:\\MAMP\\htdocs\\...')
+#7 {main}
+  thrown in C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php on line 307
+
+2022-09-28T18:25:09+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "devsneakers_theme_register_nav_menu" not found or invalid function name in C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#1 C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\MAMP\htdocs\G9-So-Much-Soda\wp-settings.php(576): do_action('after_setup_the...')
+#3 C:\MAMP\htdocs\G9-So-Much-Soda\wp-config.php(96): require_once('C:\\MAMP\\htdocs\\...')
+#4 C:\MAMP\htdocs\G9-So-Much-Soda\wp-load.php(50): require_once('C:\\MAMP\\htdocs\\...')
+#5 C:\MAMP\htdocs\G9-So-Much-Soda\wp-admin\admin.php(34): require_once('C:\\MAMP\\htdocs\\...')
+#6 C:\MAMP\htdocs\G9-So-Much-Soda\wp-admin\index.php(10): require_once('C:\\MAMP\\htdocs\\...')
+#7 {main}
+  thrown in C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php on line 307
+
+2022-09-28T18:55:44+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "devsneakers_theme_register_nav_menu" not found or invalid function name in C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php:307
+Stack trace:
+#0 C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#1 C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\plugin.php(476): WP_Hook->do_action(Array)
+#2 C:\MAMP\htdocs\G9-So-Much-Soda\wp-settings.php(576): do_action('after_setup_the...')
+#3 C:\MAMP\htdocs\G9-So-Much-Soda\wp-config.php(96): require_once('C:\\MAMP\\htdocs\\...')
+#4 C:\MAMP\htdocs\G9-So-Much-Soda\wp-load.php(50): require_once('C:\\MAMP\\htdocs\\...')
+#5 C:\MAMP\htdocs\G9-So-Much-Soda\wp-admin\admin.php(34): require_once('C:\\MAMP\\htdocs\\...')
+#6 C:\MAMP\htdocs\G9-So-Much-Soda\wp-admin\themes.php(10): require_once('C:\\MAMP\\htdocs\\...')
+#7 {main}
+  thrown in C:\MAMP\htdocs\G9-So-Much-Soda\wp-includes\class-wp-hook.php on line 307
+

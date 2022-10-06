@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2022-10-05T08:57:02+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:17
 Stack trace:
 #0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
@@ -105,4 +106,7 @@ Stack trace:
 #4 /Applications/MAMP/htdocs/G9-So-Much in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 70
 
 2022-10-05T15:43:33+00:00 CRITICAL syntax error, unexpected '.', expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 10
+=======
+2022-10-05T23:46:46+00:00 CRITICAL Out of memory (allocated 48234496) (tried to allocate 32768 bytes) in C:\MAMP\htdocs\G9-So-Much-Soda\wp-content\plugins\woocommerce\packages\woocommerce-blocks\build\all-products.asset.php on line 1
+>>>>>>> origin/shnam
 
