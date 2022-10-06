@@ -11,18 +11,10 @@
 
 
 
-
-
-
-
-
-
-
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-
-<?php if (is_page('vara-butiker') || is_page('om-oss')) : ?>
+<?php if (is_page('vara-butiker') || is_page('om-oss')|| is_page('homepage')) : ?>
         
         <div class="page-img-top-container">
         

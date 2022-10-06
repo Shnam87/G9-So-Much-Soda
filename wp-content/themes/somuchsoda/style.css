@@ -8,7 +8,7 @@ body {
   padding: 0;
   margin: auto;
   max-width: 1440px;
-  border: 2px solid burlywood;
+  
 }
 
 #wrapper{
@@ -403,9 +403,7 @@ width: 245px;
   background: #BFC7C7;
 }
 
-.woocommerce button:hover{
-  background-color: #617C7C;
-}
+
 
 .woocommerce .quantity .qty{
   border: none;

@@ -1,5 +1,12 @@
 <?php 
 
+
+function add_woocommerce_support(){
+   add_theme_support('woocommerce');
+ }
+ add_action('after_setup_theme', 'add_woocommerce_support');
+
+
 // Que in scripts (worked without but just in case)
 function somuchsoda_enqueue(){
   wp_enqueue_style('style', get_stylesheet_uri());
@@ -139,25 +146,7 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'tutsplus_excerpt_in_produ
 
 
 
-add_action('acf/init', 'my_acf_init_block_types');
-function my_acf_init_block_types()
-{
 
-    // Check function exists.
-    if (function_exists('acf_register_block_type')) {
-
-        // register hero block.
-        acf_register_block_type(array(
-            'name'              => 'hero',
-            'title'             => __('Hero'),
-            'description'       => __('A custom hero block.'),
-            'render_template'   => 'template-parts/blocks/hero.php',
-            'category'          => 'formatting',
-            'icon'              => 'admin-media',
-            'keywords'          => array('hero'),
-        ));
-      }
-};
 
 
 add_action('woocommerce_before_single_product', 'add_breadcrumb', 20);
@@ -166,22 +155,18 @@ function add_breadcrumb(){
 };
  
 
-add_action('woocommerce_after_shop_loop', 'add_text', 20);
+/* add_action('woocommerce_after_shop_loop', 'add_text', 20);
 function add_text(){
      get_template_part( 'template-parts/news' ); 
      get_template_part( 'template-parts/blocks/hero' );  
-};
+}; */
  
 
 
-function add_woocommerce_support(){
-   add_theme_support('woocommerce');
- }
- add_action('after_setup_theme', 'add_woocommerce_support');
  
 
 
- function woocommerce_button_proceed_to_checkout() { ?>
+function woocommerce_button_proceed_to_checkout() { ?>
    <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward">
    <?php esc_html_e( 'CHECKOUT', 'woocommerce' ); ?>
    </a>

@@ -13,8 +13,8 @@ get_header('black');
 <!-- 
 
      <?php
-     get_template_part( 'template-parts/news' ); 
-     get_template_part( 'template-parts/blocks/hero' ); 
+    // get_template_part( 'template-parts/news' ); 
+    // get_template_part( 'template-parts/blocks/hero' ); 
      ?> -->
         
 
