@@ -1,6 +1,18 @@
-.vscode
+wp-admin
+wp-includes
 
-blankslate
+wp-activate
+wp-blog-header
+wp-comments-post
+wp-cron
+wp-links-opml
+wp-load
+wp-login
+wp-mail
+wp-settings
+wp-signup
+wp-trackback
+xmlrpc
 
 wp-config.php
 
