@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="search-field">
+<div class="search-field-again">
     <?php get_search_form(); ?>
 </div>
 
