@@ -19,5 +19,8 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+
 wp-config.php
+
 !.gitignore
+!index.php

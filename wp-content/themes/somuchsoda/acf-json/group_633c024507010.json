@@ -44,7 +44,7 @@
             "key": "field_633c029ed3cbf",
             "label": "Subheading",
             "name": "subheading",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -55,9 +55,9 @@
             },
             "default_value": "",
             "maxlength": "",
+            "rows": "",
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "new_lines": ""
         },
         {
             "key": "field_633c02e4d3cc0",
@@ -117,5 +117,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664888976
+    "modified": 1665142476
 }
