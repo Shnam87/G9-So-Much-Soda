@@ -17,10 +17,10 @@
     <header id="header" role="banner">
    
     <!--   <?php
-      wp_nav_menu(array(
-        'theme_location' => 'header-menu',
-        'container_class' => 'top-menu-class'
-      ));
+      // wp_nav_menu(array(
+      //   'theme_location' => 'header-menu',
+      //   'container_class' => 'top-menu-class'
+      // ));
       ?> -->
 
 
