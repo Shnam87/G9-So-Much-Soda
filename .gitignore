@@ -1,20 +1,11 @@
-<<<<<<< HEAD
-wp-admin
-wp-includes
-=======
 .vscode
 wp-admin
 wp-includes
 
->>>>>>> origin/shnam
 .htaccess
 index.php
 license.txt
 readme.html
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/shnam
 wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
@@ -28,11 +19,8 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
-<<<<<<< HEAD
-wp-config.php
-=======
 
 wp-config.php
 
->>>>>>> origin/shnam
 !.gitignore
+!index.php
