@@ -16,12 +16,21 @@
   <div id="wrapper" class="hfeed">
     <header id="header" role="banner">
    
+<<<<<<< HEAD
     <!--   <?php
       // wp_nav_menu(array(
       //   'theme_location' => 'header-menu',
       //   'container_class' => 'top-menu-class'
       // ));
       ?> -->
+=======
+    <!--   <?php /*
+      wp_nav_menu(array(
+        'theme_location' => 'header-menu',
+        'container_class' => 'top-menu-class'
+      ));
+      */?> -->
+>>>>>>> origin/shnam2
 
 
       <nav id="site-navigation" class="main-navigation box" role="navigation">

@@ -73,6 +73,10 @@ svg path{
   color: #353434;
 }
 
+.header-black a:visited {
+  color: black;
+}
+
 .sub-menu a{
   color: #353434;
 }
