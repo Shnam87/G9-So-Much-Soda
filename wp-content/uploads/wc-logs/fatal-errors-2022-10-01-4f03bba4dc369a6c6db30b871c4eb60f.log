@@ -1,0 +1,2 @@
+2022-10-01T22:16:05+00:00 CRITICAL Out of memory (allocated 50331648) (tried to allocate 32768 bytes) in C:\MAMP\htdocs\G9-So-Much-Soda\wp-content\plugins\woocommerce\includes\rest-api\Server.php on line 1
+

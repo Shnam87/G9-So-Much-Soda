@@ -25,10 +25,10 @@
 
 
 
-<div class="page-content-wrapper">
+<div class="page-content-wrapper page-title">
 <h1><?php the_title(); ?></h1>
 
-<div class="page-content-div">
+<div class="page-content-div the-content">
 <?php the_content(); ?>
 </article>
 </div
@@ -39,3 +39,8 @@ endif; ?>
 
 
 <?php get_footer(); ?>
+
+
+
+
+
