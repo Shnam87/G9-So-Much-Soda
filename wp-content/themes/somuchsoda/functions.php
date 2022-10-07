@@ -4,8 +4,6 @@ add_theme_support('post-thumbnails');
 add_theme_support('custom-logo');
 
 
-
-
 function add_woocommerce_support(){
    add_theme_support('woocommerce');
  }
