@@ -32,13 +32,15 @@ body {
   padding-top: 2%;
 }
 
-/*
+
 .footer-menu-title {
-  border: 2px solid blue;
+/*  border: 2px solid blue;
   margin: 50px 6px 20px;
   padding: 30px 40px 0;
-}
 */
+margin-bottom: 8%;
+}
+
 
 #menu-navigate,
 #menu-information {
