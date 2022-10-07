@@ -1,17 +1,20 @@
-<?php get_header(); ?>
+<?php get_header('black'); ?>
 
-<h1 class="page-title">
+<div class="page-content-wrapper">
 
-    <?php the_title(); ?>
+    <h1 class="page-title">
 
-</h1>
+        <?php the_title(); ?>
 
-<div class="the-content">
+    </h1>
 
-    <div class="search-field">
-        <?php get_search_form(); ?>
+    <div class="the-content">
+
+        <div class="search-field">
+            <?php get_search_form(); ?>
+        </div>
+
     </div>
-
 </div>
 
 <?php get_footer();

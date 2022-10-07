@@ -299,9 +299,6 @@ function custom_post_type() {
 
 add_action( 'init', 'custom_post_type', 0 );
 
-// Hooking up function to theme setup
-
-// add_action('init', 'create_posttype');
 
 
 function woocommerce_button_proceed_to_checkout() { ?>
