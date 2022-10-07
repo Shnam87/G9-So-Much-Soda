@@ -16,12 +16,12 @@
   <div id="wrapper" class="hfeed">
     <header id="header" role="banner">
    
-    <!--   <?php
+    <!--   <?php /*
       wp_nav_menu(array(
         'theme_location' => 'header-menu',
         'container_class' => 'top-menu-class'
       ));
-      ?> -->
+      */?> -->
 
 
       <nav id="site-navigation" class="main-navigation box" role="navigation">
