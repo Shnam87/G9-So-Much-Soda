@@ -4,6 +4,7 @@ get_header('black');
 
 <div class="page-content">
     
+
 <?php woocommerce_content(); ?>
 
 

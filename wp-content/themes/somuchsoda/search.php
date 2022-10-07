@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+
+<?php get_header('black'); ?>
 
 <div class="search-field-again">
     <?php get_search_form(); ?>

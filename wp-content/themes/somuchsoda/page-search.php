@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header('black'); ?>
+
+
 
 <h1 class="page-title">
 
