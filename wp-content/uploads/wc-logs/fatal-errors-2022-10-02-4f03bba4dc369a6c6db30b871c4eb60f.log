@@ -1,0 +1,12 @@
+2022-10-02T12:07:34+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 11
+
+2022-10-02T12:07:44+00:00 CRITICAL syntax error, unexpected end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page.php on line 12
+
+2022-10-02T14:01:33+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page-start.php:13
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/template-loader.php(106): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-blog-header.php(19): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/index.php(17): require('/Applications/M...')
+#3 {main}
+  thrown in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/page-start.php on line 13
+

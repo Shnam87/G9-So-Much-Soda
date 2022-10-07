@@ -3,13 +3,27 @@ Theme Name: So Much Soda
 Author: Grupp 9 
 */
 
-body {
+/* body {
   font-family: 'Montserrat';
   padding: 0;
   margin: auto;
   max-width: 1440px;
   
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #FFFFFF;
+}
+
 
 #wrapper{
   position: relative;
@@ -175,6 +189,191 @@ a:link {
   padding: 14px 16px;
   background-color: inherit;
   margin: 0;
+}
+
+/*==============================================*/
+/* Fonts / Texts */
+/*==============================================*/
+/* Headings (larger) */
+.start-cta-h1, 
+.text-image-h1,
+.feat-prod-h1,
+.prod-cat-h1,
+.stores-page-title,
+.prod-cat-h1  {
+  font-family: 'Libre Baskerville', serif;
+  color: #353434;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.03em;
+}
+
+/* Headings (smaller) */
+.prod-cat-item-h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #353434;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+}
+
+/* Subheadings */
+.start-cta-p,
+.feat-prod-p,
+.feat-prod-p-small,
+.prod-cat-text,
+.prod-cat-item-p,
+.text-image-p,
+.text-image-p-small,
+.stores-page-h1,
+.stores-page-p,
+.prod-cat-text {
+  font-family: 'Montserrat', sans-serif;
+  color: #353434;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/* Buttons / Links */
+.start-cta-btn, 
+.text-image-btn,
+.featured-prod-btn,
+a.prod-cat-item-link {
+  /* Button text */
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.06em;
+}
+
+/* Button / Link (visited) */ 
+a:visited {
+  color: #FFFFFF;
+}
+
+a.prod-cat-item-link:visited {
+color: #617C7C;
+}
+
+/*==============================================*/
+/* Buttons / Links (blocks) */
+/*==============================================*/
+.start-cta-btn, 
+.text-image-btn,
+.featured-prod-btn {
+  /* Button 'block' */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #617C7C;
+  width: 161px;
+  height: 37px;
+  border-radius: none;
+  border: none;
+  text-align: center;
+}
+
+/*==============================================*/
+/* 'Start': CTA Block */
+/*==============================================*/
+.start-cta-block {
+  background-color: #BFC7C7;
+  text-align: center;
+  height: 25rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.start-cta-content {
+  width: 47.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-cta-h1 {
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.start-cta-p {
+  padding: 2rem 0 3rem 0;
+  text-align: left;
+}
+
+/*==============================================*/
+/* Feautred Product Block */
+/*==============================================*/
+.feat-prod-container {
+  display: flex;
+  flex-direction: row;
+  height: 840px;
+}
+
+.feat-prod-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: clip;
+}
+
+.feat-prod-text {
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feat-prod-img, 
+.feat-prod-text {
+  flex-basis: 50%;
+}
+
+.p-small-1 {
+  padding: 0 0 1rem 0;
+}
+
+.p-small-2 {
+  color: #617C7C;
+  padding: 1rem 0 4rem 0;
+}
+
+.feat-prod-p {
+  padding-bottom: 3rem;
+}
+
+/*==============================================*/
+/* 'Start': Product Categories Block */
+/*==============================================*/
+.prod-cat-container {
+  background: #BFC7C7;
+  padding-bottom: 2rem;
+}
+
+.prod-cat-content {
+  padding: 3rem;
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.prod-cat-text {
+  padding-top: 1rem;
 }
 
 
@@ -536,4 +735,115 @@ padding: 40px;
 
 .heroBlock-content h1{
   font-size: 42px;
+}
+
+/*---------------------------------HERO SLUT-------------------------------------*/ 
+
+
+
+                                                      .prod-cat-list-container {
+                                                        display: grid;
+                                                        grid-template-columns: repeat(2, 1fr);
+                                                        /* grid-auto-rows: minmax(22.4rem, 22.9rem); */
+                                                        gap: 4rem;
+                                                        padding: 0 2rem 2rem 2rem;
+                                                      }
+
+.prod-cat-list-item {
+  flex-basis: 33rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.prod-cat-item {
+  flex-basis: 50%;
+}
+
+.prod-cat-item-img {
+  width: 100%;
+  height: 425px;
+  object-fit: cover;
+  overflow: clip;
+  margin-bottom: 2rem;
+}
+
+.prod-cat-item-p {
+  padding: 2rem 0;
+}
+
+a.prod-cat-item-link {
+  color: #617C7C;
+  text-decoration: none;
+}
+
+/*==============================================*/
+/* 'Start': Text/Image & Image/Text Block */
+/*==============================================*/
+.text-image-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 654px;
+  color: #353434;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.text-image-box {
+  width: 50%;
+}
+
+.text-image-box-1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 2em;
+  padding: 10%;
+}
+
+.text-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: clip;
+}
+
+.text-image-btn {
+  align-self: left;
+}
+
+/*==============================================*/
+/* 'Our Stores' */
+/*==============================================*/
+.stores-container {
+  background: #BFC7C7;
+  padding: 5rem 5rem 10rem 5rem;
+}
+
+.stores-page-title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.stores-listed-stores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(22.4rem, 22.9rem);
+  gap: 2rem;
+}
+
+.listed-stores-container {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 2rem;
+}
+
+.stores-page-h1 {
+  font-weight: 700;
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2022-10-05T10:46:47+00:00 CRITICAL syntax error, unexpected '<' in C:\wamp64\www\G9-So-Much-Soda\wp-content\themes\somuchsoda\woocommerce\cart\cart.php on line 103
 
 2022-10-05T10:59:10+00:00 CRITICAL Uncaught Error: Call to a member function get_categories() on null in C:\wamp64\www\G9-So-Much-Soda\wp-content\themes\somuchsoda\woocommerce\cart\cart.php:55
@@ -31,4 +32,113 @@ Stack trace:
 2022-10-05T12:41:16+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF) in C:\wamp64\www\G9-So-Much-Soda\wp-content\themes\somuchsoda\functions.php on line 211
 
 2022-10-05T14:03:40+00:00 CRITICAL syntax error, unexpected '||' (T_BOOLEAN_OR) in C:\wamp64\www\G9-So-Much-Soda\wp-content\themes\somuchsoda\woocommerce.php on line 13
+=======
+2022-10-05T08:57:02+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:17
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 17
+
+2022-10-05T08:57:06+00:00 CRITICAL Uncaught Error: Object of class WP_Post could not be converted to string in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:17
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 17
+
+2022-10-05T10:00:05+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on bool in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:38
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/G9-So-Much- in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 38
+
+2022-10-05T10:20:44+00:00 CRITICAL syntax error, unexpected 'global' (T_GLOBAL) in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 5
+
+2022-10-05T10:27:07+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:6
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/G9-So-Much-Sod in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 6
+
+2022-10-05T10:27:12+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:6
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/G9-So-Much-Sod in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 6
+
+2022-10-05T10:27:22+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:6
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/G9-So-Much-Sod in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 6
+
+2022-10-05T10:27:26+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:6
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/G9-So-Much-Sod in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 6
+
+2022-10-05T10:27:28+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php:6
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/class-wp-block.php(255): acf_render_block_callback(Array, '', Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(902): WP_Block->render()
+#5 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-includes/blocks.php(940): render_block(Array)
+#6 /Applications/MAMP/htdocs/G9-So-Much-Sod in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 6
+
+2022-10-05T10:29:44+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 19
+
+2022-10-05T10:29:46+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 19
+
+2022-10-05T11:29:47+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/stores.php on line 14
+
+2022-10-05T11:29:49+00:00 CRITICAL syntax error, unexpected '<' in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/stores.php on line 14
+
+2022-10-05T15:26:00+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 3 and at least 1 expected in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:70
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php(3): the_field()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 70
+
+2022-10-05T15:26:05+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function the_field(), 0 passed in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 3 and at least 1 expected in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php:70
+Stack trace:
+#0 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php(3): the_field()
+#1 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(657): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(568): acf_render_block(Array, '', false, 22, Object(WP_Block), Array)
+#3 /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(501): acf_rendered_block(Array, '', false, 22, Object(WP_Block))
+#4 /Applications/MAMP/htdocs/G9-So-Much in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-template.php on line 70
+
+2022-10-05T15:43:33+00:00 CRITICAL syntax error, unexpected '.', expecting end of file in /Applications/MAMP/htdocs/G9-So-Much-Soda/wp-content/themes/somuchsoda/template-parts/blocks/featured-prod.php on line 10
+>>>>>>> origin/mimmi
 
