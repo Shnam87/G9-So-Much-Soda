@@ -48,18 +48,20 @@ body {
 }
 
 header a{
-  font-size: 1.17em;
-  font-weight: 500;
-  color: white;
+  font-size: 1.3em;
+  font-weight: 600;
+  /*color: white;*/
 }
 
+/*
 .header-black{
   border: 2px solid  #353434;
 }
+*/
 
-svg path{
+/* svg path{
   fill:#f9f9f9;
-}
+}*/
 
 .svg-container svg path {
   fill: currentColor;
@@ -86,7 +88,7 @@ svg path{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
@@ -104,8 +106,10 @@ svg path{
 
 a:link {
   text-decoration: none;
-  color: white; 
+  /*color: white;*/
+  color: black;
 }
+
 
 .page-logo-container{
     flex: 0 1 auto;
@@ -113,7 +117,7 @@ a:link {
     height: 100px;
     position: absolute;
     left: 50%;
-    top: 25px;
+    top: 28%;
     transform: translateX(-50%);
 }
 
@@ -124,7 +128,7 @@ a:link {
   gap: 0;
 }
 
-.icons-nav a {
+.icons-nav>a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,15 +139,20 @@ a:link {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
+/*========= Search ==============*/
 
+.the-content {
+  min-height: 50vh;
+}
 
 .search-field {
   margin-top: 2%;
-  min-height: 50vh;
+  /*min-height: 50vh;*/
 }
+
 
 #searchform>div,
 .no-result {
@@ -192,6 +201,7 @@ a:link {
   border-top: 2px dashed gray;
 }
 
+/*================================*/
 
 /* Navigation Menu */
 .main-navigation {
@@ -424,6 +434,7 @@ a#prod-cat-item-link {
 /*==============================================*/
 #prod-cat-container {
   background: #BFC7C7;
+  width: 100%;
   padding-bottom: 2rem;
 }
 
@@ -519,7 +530,7 @@ a#prod-cat-item-link {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 69px;
+  /*margin-top: 69px;*/
 }
 
 .page-content-div p {
@@ -559,9 +570,6 @@ a#prod-cat-item-link {
 
 .term-description{
   text-align: left; 
-}
-.page-title{
-  text-align: center;
 }
 
 .woocommerce .products ul, .woocommerce ul.products {
@@ -852,6 +860,7 @@ a#prod-cat-item-link {
   flex-direction: row;
   flex-wrap: wrap;
   height: 654px;
+  width: 100%;
   color: #353434;
   font-weight: 400;
   overflow: hidden;
@@ -914,3 +923,243 @@ a#prod-cat-item-link {
 .stores-page-h1 {
   font-weight: 700;
 }
+
+
+/*========= About us & News ==============*/
+
+.page-title {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.news-block-container {
+  display: grid;
+  grid-template: auto / auto auto auto;
+  grid-gap: 60px;
+/*  margin: 50px 0; */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.news {
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.news-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.news-info>a {
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+.page-container {
+/*  border: 5px solid blue;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+/*  
+  margin: 20px 60px;
+  padding: 20px 60px;
+*/
+}
+
+.page-wrapper {
+/*  border: 5px solid red;*/
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+}
+
+.page-wrapper>.page-content {
+/*  border: 5px solid green;*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  transform: translateY(-30px);
+  padding-top: 55px;
+
+}
+
+.page-wrapper>.page-content>p {
+  margin-bottom: 20px;
+}
+
+.page-wrapper>.page-info>h1,
+.page-wrapper>.page-info>h4 {
+  margin-bottom: 20px;
+}
+
+/*
+.page-info>h4,
+.page-info>h1 {
+  margin-top: 120px;
+}
+*/
+/*
+.page-container p {
+  padding: 15px 50px;
+}
+*/
+
+.news-sub-title
+/*.about-us*/ {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  padding: 8% 1% 1%;
+}
+
+.about-us {
+  margin-bottom: 2%;
+}
+
+.news-sub-title>p
+/*.block-text*/ {
+  max-width: 850px;
+  padding: 1%;
+}
+
+.block-text>h1,
+.block-text>p {
+  margin-top: 20px;
+}
+
+/*=========== Contact ===============*/
+
+/*
+#wpforms-form-108 {
+  margin: 10px 50px;
+  padding: 10px 30px;
+}
+*/
+
+/*.wp-container-1.wp-block-group*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  transform: translateY(-30px);
+  /*margin: 1% 1% 5%;*/
+}
+
+.contact>div>p {
+  padding: 2%;
+}
+
+.contact >div {
+  max-width: 90%;
+}
+
+.wpforms-field-label {
+  text-align: start;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#wpforms-108-field_1,
+#wpforms-108-field_2,
+#wpforms-108-field_3 {
+  border: 2px solid black;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#wpforms-submit-108 {
+  background: #617C7C;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 50px;
+}
+
+.wpforms-submit-container {
+  float: right;
+}
+
+/*=========== Footer ================*/
+
+#footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  letter-spacing: 1px;
+  /*margin-top: 5%;*/
+  background: #617C7C;
+  color: white;
+}
+
+.footer-menu {
+/*  border: 20px solid white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  padding-top: 2%;
+}
+
+
+.footer-menu-title {
+  /*border: 2px solid blue;*/
+  margin-bottom: 20px;
+/*  margin: 50px 6px 20px;
+  padding: 30px 40px 0; */
+}
+
+
+#menu-navigate,
+#menu-information {
+  /*border: 2px solid red;*/
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0%;
+/*  margin: 0px 6px 50px;
+  padding: 0px 40px 0px; */
+
+}
+
+#menu-navigate > li,
+#menu-information > li {
+/*  border: 2px solid yellow; */
+  margin-bottom: 15px;
+}
+
+#menu-navigate > li > a,
+#menu-information > li > a {
+  color: white;
+}
+
+.store-logo {  
+  margin: 1%;
+}
+
+/*=============================*/
