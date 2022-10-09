@@ -1,11 +1,11 @@
-<?php if (is_page('cart') || is_page('my-account') || is_page('checkout')) : ?>
-        <?php get_header('black'); ?>
+<?php if ( is_page('start') || is_page('about-us') || is_page('contact') || is_page('our-stores')) : ?>
+        <?php get_header('white'); ?>
 <?php else : ?>
         <?php get_header(); ?>
 <?php endif; ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <?php if (is_page('our-stores') || is_page('about-us') || is_page('start')) : ?>
+                <?php if (is_page('our-stores') || is_page('about-us') || is_page('start') || is_page('news') || is_page('contact')) : ?>
                         <div class="page-img-top-container">
                                 <?php the_post_thumbnail('large'); ?>
                         </div>

@@ -1,4 +1,4 @@
-<?php get_header('black'); ?>
+<?php get_header(); ?>
 
 <div class="page-content-wrapper">
 
