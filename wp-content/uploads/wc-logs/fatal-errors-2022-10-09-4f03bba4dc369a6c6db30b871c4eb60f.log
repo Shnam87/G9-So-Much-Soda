@@ -1,0 +1,10 @@
+2022-10-09T08:34:34+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_account_orders_endpoint() in C:\MAMP\htdocs\G9-So-Much-Soda\wp-content\themes\somuchsoda\functions.php:491
+Stack trace:
+#0 C:\MAMP\htdocs\G9-So-Much-Soda\wp-settings.php(566): include()
+#1 C:\MAMP\htdocs\G9-So-Much-Soda\wp-config.php(97): require_once('C:\\MAMP\\htdocs\\...')
+#2 C:\MAMP\htdocs\G9-So-Much-Soda\wp-load.php(50): require_once('C:\\MAMP\\htdocs\\...')
+#3 C:\MAMP\htdocs\G9-So-Much-Soda\wp-blog-header.php(13): require_once('C:\\MAMP\\htdocs\\...')
+#4 C:\MAMP\htdocs\G9-So-Much-Soda\index.php(17): require('C:\\MAMP\\htdocs\\...')
+#5 {main}
+  thrown in C:\MAMP\htdocs\G9-So-Much-Soda\wp-content\themes\somuchsoda\functions.php on line 491
+
