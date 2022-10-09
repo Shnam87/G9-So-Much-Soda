@@ -1,4 +1,4 @@
-<?php get_header();  ?>
+<?php get_header('white');  ?>
 
 <div>
   <div class="news-sub-title">

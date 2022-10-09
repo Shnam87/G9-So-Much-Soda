@@ -1,5 +1,5 @@
 <?php
-get_header('black');
+get_header();
 ?>
 
 <div class="page-content">
